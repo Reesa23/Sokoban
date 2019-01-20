@@ -1,24 +1,25 @@
-# Projeto-FPRO
+# Sokoban clone
 
-Sokoban
+This game is a clone of Sokoban developed for the [Programming Fundamentals](https://sigarra.up.pt/feup/en/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=419983) course, from FEUP.
 
-# Game for FPRO
+The game was developed in PyGame. The levels used are from [XSokoban](http://www.cs.cornell.edu/andru/xsokoban.html).
 
-Simple game made in python, with module PyGame.
+![screenshot](screenshot.png)
 
+* [Video here](https://www.youtube.com/watch?v=lyPP9xS6Q_M)
 
-
-### Prerequisites
+## Prerequisites
 
 PyGame installed
 
-    try one of the following commands under the anaconda prompt or terminal:
-    ```
-    pip install pygame
-    
-    sudo apt-get install python3-pygame
-    
-    ```
+Try one of the following commands under the anaconda prompt or terminal:
+
+```
+pip install pygame
+
+sudo apt-get install python3-pygame
+
+```
 
 ## How to Run
 

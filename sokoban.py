@@ -12,7 +12,7 @@ niveis = []
 
 ## Lers os niveis a partir do ficheiro
 def ler_nivel(nivel):
-    with open('niveis.txt') as f:
+    with open('data/niveis.txt') as f:
         while nivel > 0:
             linha = f.readline()
             if linha == '---------------\n':  # acabou de ler nivel
@@ -70,10 +70,10 @@ def jogo(level, theme):
 
     # carregar tema
     
-    caixa_img = pygame.image.load(theme + "_caixa.png")
-    parede_img = pygame.image.load(theme + "_parede.png")
-    jogador_img = pygame.image.load(theme + "_jogador.png")
-    deposito_img = pygame.image.load(theme + "_deposito.png")  
+    caixa_img = pygame.image.load('data/' + theme + "_caixa.png")
+    parede_img = pygame.image.load('data/' + theme + "_parede.png")
+    jogador_img = pygame.image.load('data/' + theme + "_jogador.png")
+    deposito_img = pygame.image.load('data/' + theme + "_deposito.png")  
              
     
 ## Ciclo
@@ -258,7 +258,7 @@ def menu_theme():
         #Cria o ecrã global do jogo
         global screen
         screen = pygame.display.set_mode((600, 600))
-        bg = pygame.image.load("desenho_theme.png")
+        bg = pygame.image.load("data/desenho_theme.png")
         screen.blit(bg, (0, 0))
         pygame.display.update()
 
@@ -289,7 +289,7 @@ def menu_theme():
 def win():
     
     screen = pygame.display.set_mode((600, 600))
-    bg = pygame.image.load("desenho_complete.png")
+    bg = pygame.image.load("data/desenho_complete.png")
     screen.blit(bg, (0, 0))
     pygame.display.update()
     pygame.time.delay(1000)
@@ -306,7 +306,7 @@ def menu(main_theme):
         #Cria o ecrã global do jogo
         global screen
         screen = pygame.display.set_mode((600, 600))
-        bg = pygame.image.load("desenho_menu_1.png")
+        bg = pygame.image.load("data/desenho_menu_1.png")
         screen.blit(bg, (0, 0))
         pygame.display.update()
 
